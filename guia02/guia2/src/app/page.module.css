@@ -1,0 +1,77 @@
+/* Estilos Ejercicio 2
+.main { display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding:
+6rem; min-height: 100vh;
+}
+
+.container__list { list-style-type: none; padding: 0;
+}
+
+.list {
+margin-bottom: 5px;
+}
+
+.title { margin: 20px 0; border: 0;
+border-top: 1px solid #ccc;
+}
+
+.nameclub {
+    margin: 20px 0; border: 0;
+    border-top: 1px solid rgb(29, 84, 185);
+}
+
+.jugardorimg {
+    width: 5rem;
+    display: flex;
+    margin: .5rem;
+    box-shadow: 10px 7px 4px rgba(0, 0, 0, .5);
+} */
+
+/* Estilos Ejercicio 3 */
+.main { display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding:
+6rem; min-height: 100vh;
+}
+.calculadora { max-width: 400px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius:
+5px; background-color: #fff;
+}
+
+.numeros {
+margin-bottom: 10px;
+}
+.text { display: block; margin-bottom: 5px;
+}
+.inputnum { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;
+}
+.button { font-size: 1.2em; padding: 10px; margin-right: 10px; border: 1px solid #ccc; border-radius:
+5px; cursor: pointer;
+margin-top: .5rem;
+}
+.resultado {
+    margin-top: 10px; font-weight: bold;
+}
+
+/* Estilos Ejercicio 4
+.main { display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding:
+6rem; min-height: 100vh;
+}
+.title2 { color: #333;
+}
+.text {
+margin-right: 10px;
+}
+.input { margin-bottom: 10px; padding: 5px;
+}
+.button { padding: 8px; background-color: #4caf50; color: #fff; border: none; cursor: pointer;
+}
+.button:hover {
+background-color: #45a049;
+}
+
+.ul {
+list-style-type: none; padding: 0;
+}
+.li {
+margin-bottom: 5px;
+}
+.hr { margin: 20px 0; border: 0;
+border-top: 1px solid #ccc;
+} */
