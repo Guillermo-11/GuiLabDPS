@@ -12,7 +12,6 @@ const Form = () => {
     ])
     const handleChange = e=>setTodo({[e.target.name]:e.target.value})
     const handleClick = e=> {
-        console.log(todos);
         if (Object.keys(todo).length === 0 || todo.todo.trim() === '') {
             alert('el campo no puede ser vacío')
             return
@@ -36,7 +35,7 @@ const Form = () => {
 
             {
                 todos.map((value, index) => (
-                    <Todo todo={value.todo} key={value} deleteTodo={deleteTodo}/>
+                    <Todo todo={value.todo} index={index} key={index} deleteTodo={deleteTodo}/>
                 ))
             }
         </>

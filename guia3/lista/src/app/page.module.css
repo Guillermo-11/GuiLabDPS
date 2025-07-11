@@ -6,7 +6,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App {
@@ -37,7 +36,7 @@
 
 .form_input {
   height: 40px;
-  width: 500px;
+  width: 100%;
   font-size: 20px;
   border-radius: 5%;
   display: flex;
@@ -79,6 +78,59 @@
   border-radius: 4px;
   color: #ffffff;
   background-color: red;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
+}
+
+.form {
+  margin: 1rem auto;
+  justify-content: center;
+}
+
+.form_group {
+  display: grid;
+  grid-template-columns: .5fr .5fr;
+  margin: .5rem auto;
+}
+
+.titulos_form {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.tabla {
+  margin: 1.5rem auto;
+  background-color: #FFF;
+  font-family: "Times New Roman", Times, serif;
+  border: 1px solid #000000;
+  width: 32rem;
+  text-align: center;
+  border-collapse: collapse;
+  color: black;
+}
+
+.tabla .thead {
+  background-color: #D3D3D3;
+}
+
+.tabla .thead th{
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+
+.tabla .celdas, .thead th {
+  border: 1px solid #000000;
+  padding: 3px 2px;
+  color: black;
+}
+
+.tabla .celdas {
+  font-size: 1.1rem;
+}
+
+.tabla .celdas:nth-child(odd) {
+  background-color: #F0F0F0;
 }

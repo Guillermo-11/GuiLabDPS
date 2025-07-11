@@ -1,15 +1,15 @@
 import styles from "./page.module.css";
-import Carrito from "@/components/Carrito";
+import Form from "@/components/Form";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className="App">
         <div>
-          <h1>
-            Completa tu Lista de Compra:
-          </h1>
-          <Carrito></Carrito>
+          <p>
+            Aquí haremos nuestro TO-DO list
+          </p>
+          <Form></Form>
         </div>
       </div>
     </main>
