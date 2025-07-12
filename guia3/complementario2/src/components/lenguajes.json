@@ -1,0 +1,112 @@
+[
+  {
+    "nombre": "JavaScript",
+    "url_img": "https://images.vexels.com/media/users/3/166403/isolated/preview/a5a33bf3004830a2bd581e9fa65de660-javascript-programming-language-icon.png?w=360",
+    "year": 1995,
+    "creador": "Brendan Eich",
+    "uso_actual": "Desarrollo web, servidores (Node.js), apps móviles, escritorio",
+    "porcentaje_uso": 63.6,
+    "historia": "Desarrollado en 10 días en Netscape, se convirtió en el estándar del scripting web.",
+    "demanda_actual": "muy alta",
+    "tipado": "débil y dinámico"
+  },
+  {
+    "nombre": "Python",
+    "url_img": "https://www.todosoluciones.es/wp-content/uploads/2024/11/Python-Logo-600x445.png.webp",
+    "year": 1991,
+    "creador": "Guido van Rossum",
+    "uso_actual": "IA, ciencia de datos, web, automatización",
+    "porcentaje_uso": 48.1,
+    "historia": "Creado como un lenguaje fácil de aprender y leer, con gran crecimiento en el campo de la IA.",
+    "demanda_actual": "muy alta",
+    "tipado": "dinámico"
+  },
+  {
+    "nombre": "Java",
+    "url_img": "https://cdn-icons-png.flaticon.com/512/226/226777.png",
+    "year": 1995,
+    "creador": "James Gosling",
+    "uso_actual": "Aplicaciones empresariales, Android, servidores",
+    "porcentaje_uso": 30.3,
+    "historia": "Fue popularizado por su lema 'escribe una vez, corre en cualquier parte'.",
+    "demanda_actual": "alta",
+    "tipado": "estático y fuerte"
+  },
+  {
+    "nombre": "C#",
+    "url_img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/910px-Logo_C_sharp.svg.png",
+    "year": 2000,
+    "creador": "Microsoft",
+    "uso_actual": "Aplicaciones de escritorio, videojuegos (Unity), servicios web",
+    "porcentaje_uso": 27.5,
+    "historia": "Parte del framework .NET, diseñado para competir con Java.",
+    "demanda_actual": "alta",
+    "tipado": "estático y fuerte"
+  },
+  {
+    "nombre": "C++",
+    "url_img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
+    "year": 1985,
+    "creador": "Bjarne Stroustrup",
+    "uso_actual": "Sistemas embebidos, videojuegos, software de alto rendimiento",
+    "porcentaje_uso": 22.3,
+    "historia": "Derivado de C, pero con orientación a objetos.",
+    "demanda_actual": "media-alta",
+    "tipado": "estático y fuerte"
+  },
+  {
+    "nombre": "TypeScript",
+    "url_img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
+    "year": 2012,
+    "creador": "Microsoft",
+    "uso_actual": "Aplicaciones web grandes, desarrollo empresarial",
+    "porcentaje_uso": 21.4,
+    "historia": "Superset de JavaScript con tipado estático opcional.",
+    "demanda_actual": "muy alta",
+    "tipado": "estático (opcional)"
+  },
+  {
+    "nombre": "Go",
+    "url_img": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/go-programming-language-icon.png",
+    "year": 2009,
+    "creador": "Google",
+    "uso_actual": "Microservicios, redes, sistemas de alto rendimiento",
+    "porcentaje_uso": 12.6,
+    "historia": "Creado para ser simple, rápido y concurrente.",
+    "demanda_actual": "alta",
+    "tipado": "estático"
+  },
+  {
+    "nombre": "Rust",
+    "url_img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/2048px-Rust_programming_language_black_logo.svg.png",
+    "year": 2010,
+    "creador": "Mozilla",
+    "uso_actual": "Sistemas seguros y de alto rendimiento",
+    "porcentaje_uso": 9.7,
+    "historia": "Con enfoque en seguridad y rendimiento sin garbage collector.",
+    "demanda_actual": "alta (creciendo)",
+    "tipado": "estático"
+  },
+  {
+    "nombre": "PHP",
+    "url_img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png",
+    "year": 1995,
+    "creador": "Rasmus Lerdorf",
+    "uso_actual": "Desarrollo web (backend)",
+    "porcentaje_uso": 21.2,
+    "historia": "Uno de los lenguajes más usados en la web, con altibajos en su reputación.",
+    "demanda_actual": "media",
+    "tipado": "débil y dinámico"
+  },
+  {
+    "nombre": "Kotlin",
+    "url_img": "https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png",
+    "year": 2011,
+    "creador": "JetBrains",
+    "uso_actual": "Android, backend (JVM)",
+    "porcentaje_uso": 8.3,
+    "historia": "Adoptado oficialmente por Google para desarrollo Android.",
+    "demanda_actual": "media-alta",
+    "tipado": "estático"
+  }
+]
