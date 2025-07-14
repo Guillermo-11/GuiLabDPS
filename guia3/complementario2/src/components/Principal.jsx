@@ -12,14 +12,14 @@ const Principal = () => {
     const abrirModal = (index) => () => {
         setLengSelect(Lenguajes[index]);
         setModalOpen(true);
-        document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
-    }
+        document.body.style.overflow = 'hidden';
+    };
 
     const cerrarModal = () => () => {
         setLengSelect({});
         setModalOpen(false);
-        document.body.style.overflow = 'auto'; // Restore scrolling when modal is closed
-    }
+        document.body.style.overflow = 'auto';
+    };
 
     return (
         <>
