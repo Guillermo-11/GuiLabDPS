@@ -1,0 +1,36 @@
+[
+  {
+    "year": 2023,
+    "meses": [
+      { "mes": "Enero", "valor": 1200 },
+      { "mes": "Febrero", "valor": 1500 },
+      { "mes": "Marzo", "valor": 1700 },
+      { "mes": "Abril", "valor": 900 },
+      { "mes": "Mayo", "valor": 2000 },
+      { "mes": "Junio", "valor": 1800 },
+      { "mes": "Julio", "valor": 1300 },
+      { "mes": "Agosto", "valor": 1600 },
+      { "mes": "Septiembre", "valor": 1400 },
+      { "mes": "Octubre", "valor": 1900 },
+      { "mes": "Noviembre", "valor": 2100 },
+      { "mes": "Diciembre", "valor": 2500 }
+    ]
+  },
+  {
+    "year": 2024,
+    "meses": [
+      { "mes": "Enero", "valor": 1000 },
+      { "mes": "Febrero", "valor": 1800 },
+      { "mes": "Marzo", "valor": 1400 },
+      { "mes": "Abril", "valor": 1600 },
+      { "mes": "Mayo", "valor": 1300 },
+      { "mes": "Junio", "valor": 2000 },
+      { "mes": "Julio", "valor": 1500 },
+      { "mes": "Agosto", "valor": 1700 },
+      { "mes": "Septiembre", "valor": 1600 },
+      { "mes": "Octubre", "valor": 1800 },
+      { "mes": "Noviembre", "valor": 2200 },
+      { "mes": "Diciembre", "valor": 2400 }
+    ]
+  }
+]
