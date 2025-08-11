@@ -20,10 +20,16 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.guillermo_1234.carscom.guillermo_1234.carscom.guillermo_1234.carscom.guillermo_1234.carsn"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5a707b1c-d85a-4d0e-a548-124a5f4cf5ee"
+      }
     }
   }
 }
