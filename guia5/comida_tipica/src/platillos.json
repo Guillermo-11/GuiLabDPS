@@ -1,0 +1,55 @@
+[
+  {
+    "id": "1",
+    "nombre": "Pupusas",
+    "imagen": "https://whiskedawaykitchen.com/wp-content/uploads/2024/07/bean-cheese-pupusas-8.jpg",
+    "calorias": 350,
+    "ingredientes": [
+      "Masa de maíz o arroz",
+      "Queso",
+      "Frijoles refritos",
+      "Chicharrón",
+      "Aceite"
+    ]
+  },
+  {
+    "id": "2",
+    "nombre": "Yuca frita con chicharrón",
+    "imagen": "https://www.196flavors.com/wp-content/uploads/2019/01/yuca-con-chicharron-1-FP.jpg",
+    "calorias": 400,
+    "ingredientes": [
+      "Yuca",
+      "Chicharrón",
+      "Curtido",
+      "Salsa de tomate",
+      "Aceite para freír"
+    ]
+  },
+  {
+    "id": "3",
+    "nombre": "Sopa de pata",
+    "imagen": "https://i.ytimg.com/vi/j9e19nkY1D8/maxresdefault.jpg",
+    "calorias": 600,
+    "ingredientes": [
+      "Patas de res",
+      "Plátano verde",
+      "Elote",
+      "Yuca",
+      "Repollo",
+      "Especias"
+    ]
+  },
+  {
+    "id": "4",
+    "nombre": "Tamales de elote",
+    "imagen": "https://i.ytimg.com/vi/j9e19nkY1D8/maxresdefault.jpg",
+    "calorias": 250,
+    "ingredientes": [
+      "Elote tierno",
+      "Azúcar",
+      "Crema",
+      "Sal",
+      "Hojas de maíz"
+    ]
+  }
+]
