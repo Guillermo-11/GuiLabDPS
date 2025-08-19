@@ -1,133 +1,145 @@
-import React, {useState} from 'react';
-import { StyleSheet, Image, View, ScrollView, Text, Modal, Button, TouchableHighlight } from 'react-native';
+import React, { useState } from "react";
+import { 
+  View, 
+  Text, 
+  Image, 
+  Dimensions, 
+  TouchableOpacity, 
+  StyleSheet, 
+  Modal 
+} from "react-native";
+import Carousel from "react-native-reanimated-carousel";
+import planetas from "./src/Planetas.json";
+
+const { width } = Dimensions.get("window");
 
 export default function App() {
   const [modalVisible, setModalVisible] = useState(false);
-  const [modalTitle, setModalTitle] = useState('');
-  const [modalText, setModalText] = useState('');
+  const [planetaSeleccionado, setPlanetaSeleccionado] = useState({});
+  const [planetaIndex, setPlanetaIndex] = useState(0);
 
   return (
-    <>
-      <ScrollView>
-        <Modal transparent={true} animationType="slide" visible={modalVisible} onRequestClose={() => {alert('Modal has been closed.');}} >
-          <View style={styles.vistaModal}>
-            <View style={styles.Modal}>
-              <Text style={styles.subtitulo}>{modalTitle}</Text>
-              <Text>{modalText}</Text>
-              <Button title="Cerrar" onPress={() => {setModalVisible(!modalVisible)}} ></Button>
-            </View>
-          </View>
-        </Modal>
+    <View style={{ flex: 1, backgroundColor: "#000" }}>
+      <Text style={styles.title}>Sistema Solar</Text>
 
-        <View style={{ flexDirection: 'row' }}>
-          <Image style={styles.banner} source={require('./src/img/bg.jpg')} />
-        </View>
+      {!modalVisible && (
+        <Carousel
+          loop
+          width={width}
+          height={500}
+          data={planetas}
+          defaultIndex={planetaIndex}
+          mode="parallax"
+          modeConfig={{
+            parallaxScrollingScale: 0.8,
+            parallaxScrollingOffset: 70,
+          }}
+          renderItem={({ item, index }) => (
+            <TouchableOpacity
+              onPress={() => {
+                setPlanetaIndex(index);          // 👈 guardamos el índice
+                setPlanetaSeleccionado(item);
+                setModalVisible(true);
+              }}
+              style={styles.card}
+            >
+              <Image source={{ uri: item.url }} style={styles.image} />
+              <Text style={styles.text}>{item.nombre}</Text>
+            </TouchableOpacity>
+          )}
+        />
+      )}
 
-        <View style={styles.contenedor}>
-          <Text style={styles.titulo}>¿Qué hacer en El Salvador?</Text>
-          <ScrollView horizontal>
-            <View>
-              <TouchableHighlight onPress={() => {setModalVisible(!modalVisible); setModalTitle('Ir a la Playa'); setModalText('El Salvador cuenta con hermosas playas a nivel de Centroamérica.')}}>
-                <Image style={styles.ciudad} source={require('./src/img/actividad1.jpg')} />
-              </TouchableHighlight>
-            </View>
-            <View>
-              <Image style={styles.ciudad} source={require('./src/img/actividad2.jpg')} />
-            </View>
+      <Text style={styles.subtitle}>Desliza para ver los planetas</Text>
 
-            <View>
-              <Image style={styles.ciudad} source={require('./src/img/actividad3.jpg')} />
-            </View>
+      <Modal
+        visible={modalVisible}
+        animationType="slide"
+        transparent={true}
+        onRequestClose={() => setModalVisible(false)}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={styles.modalContent}>
+            <Text style={styles.modalTitle}>{planetaSeleccionado?.nombre}</Text>
+            <Text style={styles.modalText}>Masa: {planetaSeleccionado?.masa}</Text>
+            <Text style={styles.modalText}>Diámetro: {planetaSeleccionado?.diametro}</Text>
+            <Text style={styles.modalText}>
+              Distancia al Sol: {planetaSeleccionado?.distancia}
+            </Text>
+            <Text style={styles.modalText}>{planetaSeleccionado?.caracteristicas}</Text>
 
-            <View>
-              <Image style={styles.ciudad} source={require('./src/img/actividad4.jpg')} />
-            </View>
-
-            <View>
-              <Image style={styles.ciudad} source={require('./src/img/actividad5.jpg')} />
-            </View>
-          </ScrollView>
-
-          <Text style={styles.titulo}>Platillos Salvadoreños</Text>
-          <View>
-            <View>
-              <TouchableHighlight onPress={() => {setModalVisible(!modalVisible); setModalTitle('Comer unas Pupusas'); setModalText('Es el platillo más icónico y popular de El Salvador y se pueden disfrutar de diferentes ingredientes, de frijol con queso, chicharrón, pollo, etc. Siempre acompañadas con su salsa de tomate y curtido.')}}>
-                <Image style={styles.mejores} source={require('./src/img/mejores1.jpg')} />
-              </TouchableHighlight>
-            </View>
-            
-            <View>
-              <Image style={styles.mejores} source={require('./src/img/mejores2.jpg')} />
-            </View>
-            
-            <View>
-              <Image style={styles.mejores} source={require('./src/img/mejores3.jpg')} />
-            </View>
-          </View>
-
-          <Text style={styles.titulo}>Rutas Turísticas</Text>
-          <View style={styles.listado}>
-            <View style={styles.listaItem}>
-              <TouchableHighlight onPress={() => {setModalVisible(!modalVisible); setModalTitle('Visitar Ataco'); setModalText('Una ruta llena de muchos lugares coloridos, donde se pueden ver los famosos murales e Ataco, los cuales representan escenas del folclore salvadoreño, paisajes típicos y figuras íconicas.')}}>
-                <Image style={styles.mejores} source={require('./src/img/ruta1.jpg')} />
-              </TouchableHighlight>
-            </View>
-            
-            <View style={styles.listaItem}>
-              <Image style={styles.mejores} source={require('./src/img/ruta2.jpg')} />
-            </View>
-
-            <View style={styles.listaItem}>
-              <Image style={styles.mejores} source={require('./src/img/ruta3.jpg')} />
-            </View>
-
-            <View style={styles.listaItem}>
-              <Image style={styles.mejores} source={require('./src/img/ruta4.jpg')} />
-            </View>
+            <TouchableOpacity
+              onPress={() => setModalVisible(false)}
+              style={styles.btnClose}
+            >
+              <Text style={{ color: "#fff" }}>Cerrar</Text>
+            </TouchableOpacity>
           </View>
         </View>
-      </ScrollView>
-    </>
+      </Modal>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  banner: {
-    height: 250,
-    flex: 1
+  card: {
+    justifyContent: "center",
+    alignItems: "center",
   },
-  titulo: {
-    fontWeight: 'bold',
-    fontSize: 24,
-    marginVertical: 10
-  },
-  contenedor: {
-    marginHorizontal: 10,
-  },
-  ciudad: {
-    width: 250,
+  image: {
+    width: 300,
     height: 300,
-    marginRight: 10
+    borderRadius: 150,
   },
-  mejores: {
-    width: '100%',
-    height: 200,
-    marginVertical: 5
+  title: {
+    color: "#fff",
+    fontSize: 32,
+    textAlign: "center",
+    marginVertical: 20,
+    fontWeight: "bold",
   },
-  vistaModal: {
-    backgroundColor: '#000000aa',
+  subtitle: {
+    color: "#ccc",
+    fontSize: 18,
+    textAlign: "center",
+    marginBottom: 20,
+  },
+  text: {
+    color: "#fff",
+    fontSize: 22,
+    marginTop: 10,
+    fontWeight: "bold",
+  },
+  modalOverlay: {
     flex: 1,
+    backgroundColor: "rgba(0,0,0,0.6)", 
+    justifyContent: "center",
+    alignItems: "center",
   },
-  Modal: {
-    backgroundColor: '#fff',
-    margin: 50,
-    padding: 40,
+  modalContent: {
+    width: "85%",
+    backgroundColor: "#1a1a1a",
+    padding: 20,
+    borderRadius: 15,
+    elevation: 10,
+  },
+  modalTitle: {
+    color: "#fff",
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 10,
+    textAlign: "center",
+  },
+  modalText: {
+    color: "#ccc",
+    fontSize: 16,
+    marginBottom: 12,
+  },
+  btnClose: {
+    backgroundColor: "#444",
+    padding: 12,
     borderRadius: 10,
-    flex: 1,
-  },
-  subtitulo: {
-    fontWeight: 'bold',
-    fontSize: 14,
-    justifyContent: 'center',
+    alignItems: "center",
+    marginTop: 10,
   },
 });

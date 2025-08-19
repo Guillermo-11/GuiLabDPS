@@ -4,39 +4,24 @@
     "masa": "3.30 × 10^23 kg",
     "diametro": "4,879 km",
     "distancia": "57.9 millones km",
-    "temperatura_media": "167 °C",
-    "duracion_dia": "58.6 días terrestres",
-    "duracion_year": "88 días",
-    "lunas": 0,
-    "composicion": "Rocoso (silicatos y hierro)",
-    "url": "https://www.hagomitarea.com/wp-content/uploads/2020/01/Mercurio.jpg",
-    "dato_curioso": "Un día en Mercurio equivale a 176 días terrestres debido a su lenta rotación y rápida órbita."
+    "caracteristicas": "Es el planeta más cercano al Sol y el más pequeño del sistema solar. No tiene atmósfera significativa, lo que genera grandes variaciones de temperatura entre el día y la noche.",
+    "url": "https://www.hagomitarea.com/wp-content/uploads/2020/01/Mercurio.jpg"
   },
   {
     "nombre": "Venus",
     "masa": "4.87 × 10^24 kg",
     "diametro": "12,104 km",
     "distancia": "108.2 millones km",
-    "temperatura_media": "464 °C",
-    "duracion_dia": "243 días terrestres (retrógrado)",
-    "duracion_year": "225 días",
-    "lunas": 0,
-    "composicion": "Rocoso (dióxido de carbono, nitrógeno)",
-    "url": "https://content.nationalgeographic.com.es/medio/2022/07/31/el-planeta-venus_de3a3995_1280x1280.jpg",
-    "dato_curioso": "Venus rota en dirección opuesta a la mayoría de los planetas, y un día es más largo que un año."
+    "caracteristicas": "Tiene una atmósfera densa compuesta principalmente de dióxido de carbono, generando un fuerte efecto invernadero. Su superficie es la más caliente del sistema solar.",
+    "url": "https://content.nationalgeographic.com.es/medio/2022/07/31/el-planeta-venus_de3a3995_1280x1280.jpg"
   },
   {
     "nombre": "Tierra",
     "masa": "5.97 × 10^24 kg",
     "diametro": "12,742 km",
     "distancia": "149.6 millones km",
-    "temperatura_media": "15 °C",
-    "duracion_dia": "24 horas",
-    "duracion_year": "365.25 días",
-    "lunas": 1,
-    "composicion": "Rocoso (nitrógeno, oxígeno)",
-    "url": "https://s1.significados.com/foto/earth-11015-1920-41.jpg?class=article",
-    "dato_curioso": "La Tierra es el único planeta conocido que alberga vida y tiene agua en estado líquido en su superficie."
+    "caracteristicas": "Es el único planeta conocido que alberga vida. Posee agua líquida en abundancia, atmósfera rica en oxígeno y una gran diversidad de ecosistemas.",
+    "url": "https://s1.significados.com/foto/earth-11015-1920-41.jpg?class=article"
   },
   {
     "nombre": "Marte",
@@ -44,12 +29,7 @@
     "masa": "6.42 × 10^23 kg",
     "diametro": "6,779 km",
     "distancia": "227.9 millones km",
-    "temperatura_media": "-63 °C",
-    "duracion_dia": "24.6 horas",
-    "duracion_year": "687 días",
-    "lunas": 2,
-    "composicion": "Rocoso (dióxido de carbono, polvo)",
-    "dato_curioso": "Marte tiene el volcán más grande del sistema solar: el Olympus Mons, tres veces más alto que el Everest."
+    "caracteristicas": "Conocido como el planeta rojo por su suelo rico en óxido de hierro. Tiene montañas enormes como el Olympus Mons y cañones como Valles Marineris."
   },
   {
     "nombre": "Júpiter",
@@ -57,12 +37,7 @@
     "masa": "1.90 × 10^27 kg",
     "diametro": "139,820 km",
     "distancia": "778.5 millones km",
-    "temperatura_media": "-108 °C",
-    "duracion_dia": "9.9 horas",
-    "duracion_year": "11.9 años",
-    "lunas": 95,
-    "composicion": "Gaseoso (hidrógeno y helio)",
-    "dato_curioso": "Júpiter tiene una enorme tormenta llamada la Gran Mancha Roja que ha estado activa por al menos 300 años."
+    "caracteristicas": "Es el planeta más grande del sistema solar. Posee una atmósfera turbulenta con la Gran Mancha Roja, una tormenta gigantesca que dura siglos."
   },
   {
     "nombre": "Saturno",
@@ -70,12 +45,7 @@
     "masa": "5.68 × 10^26 kg",
     "diametro": "116,460 km",
     "distancia": "1,434 millones km",
-    "temperatura_media": "-139 °C",
-    "duracion_dia": "10.7 horas",
-    "duracion_year": "29.5 años",
-    "lunas": 146,
-    "composicion": "Gaseoso (hidrógeno y helio)",
-    "dato_curioso": "A pesar de su gran tamaño, Saturno es tan liviano que flotaría en agua debido a su baja densidad."
+    "caracteristicas": "Famoso por sus anillos compuestos de hielo y polvo. Es el segundo planeta más grande y tiene más de 80 lunas conocidas, como Titán."
   },
   {
     "nombre": "Urano",
@@ -83,12 +53,7 @@
     "masa": "8.68 × 10^25 kg",
     "diametro": "50,724 km",
     "distancia": "2,871 millones km",
-    "temperatura_media": "-195 °C",
-    "duracion_dia": "17.2 horas",
-    "duracion_year": "84 años",
-    "lunas": 27,
-    "composicion": "Gaseoso (hidrógeno, helio, metano)",
-    "dato_curioso": "Urano rota de lado, con su eje casi paralelo a su órbita. Es el único planeta con esta inclinación extrema."
+    "caracteristicas": "Gira de lado con un eje inclinado 98 grados. Su atmósfera contiene metano, que le da un color azul verdoso."
   },
   {
     "nombre": "Neptuno",
@@ -96,11 +61,6 @@
     "masa": "1.02 × 10^26 kg",
     "diametro": "49,244 km",
     "distancia": "4,495 millones km",
-    "temperatura_media": "-200 °C",
-    "duracion_dia": "16.1 horas",
-    "duracion_year": "165 años",
-    "lunas": 14,
-    "composicion": "Gaseoso (hidrógeno, helio, metano)",
-    "dato_curioso": "Neptuno tiene los vientos más veloces del sistema solar, alcanzando hasta 2,100 km/h."
+    "caracteristicas": "Es el planeta más lejano del Sol. Tiene los vientos más rápidos del sistema solar, alcanzando más de 2,000 km/h."
   }
 ]
